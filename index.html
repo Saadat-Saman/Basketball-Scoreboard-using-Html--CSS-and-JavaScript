@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Basketball Scoreboard</title>
         <link rel="stylesheet" href="index.css">
-        
     </head>
     <body>
         <div class="container">
@@ -13,6 +15,7 @@
                 <button onclick="scoreIncrease('home', 1)">+1</button>
                 <button onclick="scoreIncrease('home', 2)">+2</button>
                 <button onclick="scoreIncrease('home', 3)">+3</button>
+                <button class="reset-btn" onclick="reset()">Reset</button>
                 </div> 
             </div> 
             <div class="column">
@@ -22,10 +25,14 @@
                 <button onclick="scoreIncrease('guest', 1)">+1</button>
                 <button onclick="scoreIncrease('guest', 2)">+2</button>
                 <button onclick="scoreIncrease('guest', 3)">+3</button>
+                <button class="reset-btn" onclick="reset()">Reset</button>
                 </div>
             </div>
+            
         </div>
-        <button class="reset-btn" onclick="reset()">Reset</button>
+
+        
+        
         <script src="index.js"></script>
     </body>
 </html>
